@@ -34,8 +34,8 @@ jobs:
           cmd: install # will run `yarn install` command# Runs a single command using the runners shell
      
       - name: React App
-        run: yarn build
+        run: npm build
       - name: Install Surge
         run: npm install --global surge
       - name: Deploy Application
-        run: surge ./build bootcamp_project02.surge.sh --token ${{secrets.SURGE_TOKEN}}
+        run: surge ./ bootcamp_project02.surge.sh --token ${{ secrets.SURGE_TOKEN }}
