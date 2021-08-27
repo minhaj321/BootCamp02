@@ -34,7 +34,7 @@ jobs:
           cmd: install # will run `yarn install` command# Runs a single command using the runners shell
      
       - name: React App
-        run: yarn build
+        run: npm run build
       - name: Install Surge
         run: npm install --global surge
       - name: Deploy Application 
